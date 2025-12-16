@@ -2,82 +2,240 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resume - Yaswanth T R</title>
+    <title>Yaswanth T R | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #c0c0c0; /* Grey background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .resume {
-            max-width: 800px;
-            margin: 40px auto;
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        hr {
-            border: 1px solid #888;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 16px;
-            margin: 6px 0;
-        }
-
-        .section-title {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
+        body {
+            background: linear-gradient(135deg, #2c3e50, #bdc3c7);
             color: #333;
         }
 
-        ul {
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        /* HEADER */
+        .header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+        .header p {
             margin-top: 8px;
+            font-size: 16px;
+            color: #dcdcdc;
+        }
+
+        /* LAYOUT */
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            width: 35%;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        .right {
+            width: 65%;
+            padding: 30px;
+        }
+
+        /* SECTION */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+        }
+
+        .info p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+
+        /* SKILLS */
+        .skill {
+            margin-bottom: 12px;
+        }
+
+        .skill span {
+            font-size: 14px;
+        }
+
+        .progress {
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .progress div {
+            height: 100%;
+            background: #3498db;
+        }
+
+        /* PROJECTS */
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        .project p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .left, .right {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="resume">
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
         <h1>Yaswanth T R</h1>
-        <hr>
-
-        <p><strong>Age:</strong> 22</p>
-        <p><strong>Phone Number:</strong> 7676979369</p>
-        <p><strong>Email:</strong> yashwanthtr828@gmail.com</p>
-
-        <div class="section-title">Education</div>
-        <p><strong>Under Graduation (UG):</strong> Bharathi College</p>
-        <p><strong>Post Graduation (PG):</strong> G Madegowda Institute of Technology</p>
-
-        <div class="section-title">Technical Skills</div>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-
-        <div class="section-title">Career Objective</div>
-        <p>
-            Enthusiastic and motivated graduate seeking an opportunity to apply my technical skills,
-            enhance my knowledge, and contribute to organizational success.
-        </p>
-
-        <div class="section-title">Declaration</div>
-        <p>
-            I hereby declare that the above information is true and correct to the best of my knowledge.
-        </p>
+        <p>Frontend Developer | Web Designer | JavaScript Enthusiast</p>
     </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- LEFT PANEL -->
+        <div class="left">
+
+            <div class="section info">
+                <h2>Personal Info</h2>
+                <p><strong>Age:</strong> 22</p>
+                <p><strong>Phone:</strong> 7676979369</p>
+                <p><strong>Email:</strong> yashwanthtr828@gmail.com</p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>UG:</strong> Bharathi College</p>
+                <p><strong>PG:</strong> G Madegowda Institute of Technology</p>
+            </div>
+
+            <div class="section">
+                <h2>Technical Skills</h2>
+
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress"><div style="width:90%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress"><div style="width:85%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress"><div style="width:75%"></div></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right">
+
+            <div class="section">
+                <h2>Career Objective</h2>
+                <p>
+                    Motivated and detail-oriented graduate seeking a challenging role as a
+                    Frontend Developer where I can apply my skills in HTML, CSS, and JavaScript
+                    to build responsive and user-friendly web applications.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed a personal portfolio using HTML, CSS, and JavaScript with responsive layout.</p>
+                </div>
+
+                <div class="project">
+                    <h3>Student Management System</h3>
+                    <p>Created a basic frontend interface for managing student data.</p>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Strengths</h2>
+                <p>✔ Quick Learner</p>
+                <p>✔ Problem Solving</p>
+                <p>✔ Team Collaboration</p>
+            </div>
+
+            <div class="section">
+                <h2>Declaration</h2>
+                <p>
+                    I hereby declare that all the information provided above is true to the best
+                    of my knowledge and belief.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2025 Yaswanth T R | Portfolio Resume
+    </div>
+
+</div>
 
 </body>
 </html>
